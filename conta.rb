@@ -25,9 +25,7 @@ class Conta
     end
 
     def transferir(conta_destino, valor)
-        if sacar >= valor
+        sacar(valor)
         conta_destino.depositar(valor)
-        else
-            puts "Não existe saldo suficiente"
     end
 end
